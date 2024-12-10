@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-#cardContainer {
+#CardContainer {
   margin-top: 25px;
   display: flex;
   width: 80%;
@@ -11,6 +11,7 @@ body {
   margin-right: auto;
   gap: 1rem;
   flex-wrap: wrap;
+  flex-grow: 1;
   overflow: hidden;
 
   a {
