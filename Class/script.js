@@ -1,6 +1,7 @@
 // class is essentially a blueprint for object
 class laptop {
   // object orienet programming oop
+  static count = 0;
   constructor(brand, model, cpu, gpu, ram, rom) {
     this.brand = brand;
     // brand : "Asus"
@@ -10,9 +11,14 @@ class laptop {
     this.ram = ram;
     this.rom = rom;
 
-    function run() {
-      console.log("The laptop is running");
-    }
+    laptop.count++;
+  }
+
+  run() {
+    console.log("The laptop is running");
+  }
+  static getCount() {
+    return laptop.count;
   }
 }
 

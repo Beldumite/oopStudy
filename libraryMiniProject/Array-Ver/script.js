@@ -30,6 +30,12 @@ const books = [
     image:
       "https://ew.com/thmb/rvat6WP-MplFuFNA4xJ-aGKEADc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9781408855652-png-c57764456b554308ae1398474caab3c2.jpg    ",
   },
+  {
+    name: "xavier",
+    genre: "Psycological horror/depression",
+    author: "Martian",
+    release: 2008,
+  },
 ];
 
 const CardContainer = document.querySelector("#CardContainer");

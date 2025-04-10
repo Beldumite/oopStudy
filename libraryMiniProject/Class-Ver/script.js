@@ -1,6 +1,8 @@
 // ini secara dasar adalah website daftar buku berbasis card yang dinamis
 // cardnya itu ga manual di tambah di html tapi di js
 // ini gw pake class, ada versi yang make array tapi gw belum coba
+books = [];
+
 class book {
   constructor(name, genre, author, release, image) {
     this.name = name;
@@ -35,6 +37,7 @@ class book {
 
 function createNewBook(name, genre, author, release, image) {
   const newBook = new book(name, genre, author, release, image);
+  books.push(newBook);
   newBook.createCard();
 }
 
