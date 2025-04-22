@@ -44,11 +44,13 @@ class StudentScores {
   }
 }
 
-function addClass() {
-  const name = document.querySelector("#name").value;
-  const age = document.querySelector("#age").value;
-  const score = document.querySelector("#score").value;
-
-  student.push(new StudentScores(name, age, score));
-  console.log(student);
+function addClass(name, age, score) {
+  const x = new StudentScores(name, age, score);
+  student.push(x);
 }
+
+addClass("azka", 16, 100);
+addClass("ravalino", 17, 100);
+console.log(student);
+console.log(student[0].getName(), student[0].getScore());
+console.log(student[1].getName(), student[1].getScore());
