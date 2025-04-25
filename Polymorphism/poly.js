@@ -1,6 +1,7 @@
 class Animal {
   makeSound() {
     console.log("Some generic animal sound");
+    console.log("dwjialdjaw;ooda");
   }
 }
 
@@ -22,10 +23,18 @@ class Cow extends Animal {
   }
 }
 
+class Bird extends Animal {
+  makeSound() {}
+}
+
 const dog = new Dog();
 const cat = new Cat();
 const cow = new Cow();
+const bird = new Bird();
+const animal = new animal();
 
 dog.makeSound(); // Outputs: Woof! Woof!
 cat.makeSound(); // Outputs: Meow! Meow!
 cow.makeSound(); // Outputs: Moo! Moo!
+bird.makeSound();
+animal.makeSound();
