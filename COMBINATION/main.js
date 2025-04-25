@@ -6,6 +6,7 @@ bag = [];
 
 class pc {
   static #pokemon = [];
+  //encapsulation
 
   static deposit(pokemon) {
     this.#pokemon.push(pokemon);
@@ -56,10 +57,6 @@ class pc {
 }
 
 class pokemon {
-  // #name;
-  // #level;
-  // #type;
-  //encapsulation
   constructor(name, type, level) {
     this.name = name;
     this.type = type;
@@ -76,6 +73,8 @@ class shinyPokemon extends pokemon {
     return `${super.getInfo()}, Its Shiny ✨✨✨✨✨✨`;
     //polymorphism
   }
+  //and yes if you ask this class is like, useless. i know
+  //im doing this just so that inheritence and polymorphism exist :v
 }
 
 let leafeon = new pokemon("Leafeon", "Grass", "21");
@@ -84,3 +83,6 @@ pc.deposit(leafeon);
 pc.deposit(vaporeon);
 pc.withdraw(leafeon);
 pc.getInfo();
+
+//and if your asking why im using english, well i like it
+// and skill issue if you can't understand it :>
