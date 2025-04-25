@@ -2,8 +2,6 @@
 //if you play some of em, you know what im talking abaut
 //and before you ask, yes im a pokemon fan.
 
-bag = [];
-
 class pc {
   static #pokemon = [];
   //encapsulation
@@ -81,8 +79,10 @@ let leafeon = new pokemon("Leafeon", "Grass", "21");
 let vaporeon = new shinyPokemon("Vaporeon", "Water", "22");
 pc.deposit(leafeon);
 pc.deposit(vaporeon);
-pc.withdraw(leafeon);
 pc.getInfo();
+pc.withdraw(leafeon);
+pc.getInfo(); //Leafeon was not on the pc anymore
 
-//and if your asking why im using english, well i like it
-// and skill issue if you can't understand it :>
+// i dont know if you realized it but im using only english for the comment
+//and if your asking why am i using english? well i like it, yeah its feel more natural
+// and skill issue if you can't understand it :> JK XD
